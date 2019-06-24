@@ -1,0 +1,28 @@
+#include<iostream>
+#include<cstdlib>
+ #include<ctime>
+
+  using namespace std;
+
+ int main()
+ {
+    srand(time(0));
+    int guess;
+    int a=rand()%25;
+
+      do{
+      	cout<<"please enter your guess number"<<endl;
+      	cin>>guess;
+      	if(a>guess)
+      	cout<<"your guess is lower the number"<<endl;
+      	else
+      	if(a<guess)
+      	cout<<"your guess is greater the number "<<endl;
+         else
+            if(a==guess)
+
+        cout<<"congrats! you guess the number is right"<<endl;
+
+	  }while(a!=guess);
+ 	return 0;
+ }
